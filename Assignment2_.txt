@@ -1,0 +1,38 @@
+https://s2921450.elf.ict.griffith.edu.au/webAppDev/week9(21)/review/public/product
+
+Migration and Seeder
+--------------------
+
+php artisan migrate:rollback
+php artisan migrate:refresh --seed
+sqlite3 database.sqlite
+sqlite3 database.sqlite
+.tables
+
+User Registration
+-----------------
+
+Sally Sanders
+ss@a.org
+Fred Fies
+ff@a.org
+Chen Davids
+c.davids@a.org
+
+Create item 
+-----------
+
+try iPhome 13
+
+Galaxy Z Fold3 5G
+https://images.samsung.com/is/image/samsung/assets/au/smartphones/galaxy-z-fold3-5g/buy/ZFold3_Carousel_MainSingleKV_withDisclaimer_PC.jpg?imwidth=1366
+https://www.samsung.com/au/smartphones/galaxy-z-fold3-5g/buy/?modelCode=SM-F926BZGEATS
+
+Unfold for theatre-like experience with 120Hz refresh rate | Flex mode viewing. 4,400mAh Long Lasting Battery | Wrapped in Gorilla Glass Victus™ | S Pen Compatible. Snapdragon 888 chipset. 7.6-Inch Main Display. IPX8 Waterproof Rating. Hands-Free Camera
+
+2649.00
+
+List
+----
+
+select * from products;

@@ -1,0 +1,245 @@
+/* 
+ * Simple, fixed-width, two-column, CSS layout example.
+ * See also index.html.
+ * Adapated from "Online Scrapbooks" by Kathy Pridham.
+ */
+
+ body { color: brown }
+
+ /* h1, h2, h3, h4, h5, h6 { font-family: sans-serif; color: orange } */
+h1 { font-weight: bold; color: #003399; }
+h2 { font-weight: bold; color: #006666; }
+h3 { font-weight: bold; color: #009933; }
+h4 { font-weight: bold; font-style: italic; color: #669900; }
+ 
+ #head { 
+     text-align: center; 
+     border-bottom: 1px solid #8a8884; 
+     border-top: 1px solid #8a8884;
+     background-color: red;
+     color: white; 
+    }
+ 
+ /* 
+ #links {
+     width: 150px; float: left;  */
+     /*background-color: #efff3c;/*#fff93c;*//*rgb(212, 142, 0); */   
+     /* margin: 10px; */
+     /*border: 2px solid black;*/
+     /* padding: 10px; 
+ } 
+ */
+ 
+ #links a {
+     /* display: block;  */
+     font-family: sans-serif; font-size: 9pt; color: white; 
+ }
+ #links a:link { text-decoration: none; }
+ #links a:visited { text-decoration: none; }
+ #links a:hover { color: black; text-decoration: underline; }
+ #links a:active { text-decoration: none; }
+ #links a.newgroup { margin-top: 15px; }
+ 
+ #main {
+     border-left: 1px solid rgb(138, 136, 132); padding-left: 10px;
+     /* width: 70%; float: left;  */
+ }
+
+ #messageHeader{
+    border-left: 1px solid orange; padding-left: 2px;
+    border-right: 1px solid orange; padding-left: 10px;
+ }
+
+ .messageBlock{
+     padding-bottom: 1.5rem;
+ }
+ 
+ address {
+     clear: both; 
+     border-top: 1px solid orange;
+     color: orange; 
+     text-align: center; 
+     font-style: normal; font-variant: small-caps; 
+ }
+ 
+
+
+ footer {
+    clear: both;
+    border-top: 1px solid #8a8884;
+    color: white;
+    text-align: center;
+    font-style: normal;
+    font-variant: small-caps;
+    background-color: red;
+}
+ /* footer {
+    clear: both; 
+    border-top: 1px solid #8a8884;
+    color: white;
+    background-color: red; 
+    text-align: center; 
+    font-style: normal; font-variant: small-caps; 
+} */
+ /* img.logo{
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 150px;
+  } */
+
+  /*----------------*/
+/* ::: Home page Elements */
+  #vehicles {
+	/* float: right; */
+    text-align: center;
+	width: 700px;
+}
+
+.vehicle {
+	margin: 40px;
+	padding: 50px;
+	background-color: /*#9BF*/rgb(255, 153, 153);
+	border-radius: 50px;
+	min-height: 300px;
+    overflow: hidden;
+	font-family: Helvetica;
+	font-size: 11pt;
+}
+
+.vehicle_image {
+	float: left;
+	width: 200px;
+    height: auto;
+	margin-right: 20px;
+}
+
+.vehicle_details {
+	float: right;
+	width: 250px;
+    padding-left: 4rem;
+}
+  
+.vehicle_details p {
+	/* color: white; */
+    /*text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;*/
+}
+
+.vehicle_image {
+	float: left;
+	width: 200px;
+    height: auto; 
+	margin-right: 20px;
+}
+
+.vehicle_rego {
+	font-weight: bold;
+}
+
+.vehicle_description {
+	
+}
+
+.client_description{
+    /* text-align: right; */
+    float: right;
+}
+/* ::: Home page Elements ::: */
+
+/* ::: Detail page Elements */
+
+.booking {
+	margin: 5px 40px 45px;
+	padding: 50px;
+	background-color: /*#9BF*/rgb(255, 153, 153);
+	border-radius: 50px;
+	min-height: 200px;
+    overflow: hidden;
+	font-family: Helvetica;
+	font-size: 11pt;
+}
+
+.bookingFail {
+	margin: 5px 40px 45px;
+	padding: 50px;
+	background-color: /*#9BF*/rgba(190, 157, 157, 0.5);
+	border-radius: 50px;
+	min-height: 200px;
+    overflow: hidden;
+	font-family: Helvetica;
+	font-size: 11pt;
+}
+
+.booking_details {
+    float: left;
+    max-width: 250px;
+    /* width: 130px; */
+}
+
+#bookingHeading{
+    margin-bottom: 40px;
+    background-color: /*#9BF*/rgb(255, 153, 153);
+	border-radius: 50px;
+	height: 50px;
+    font-size: 25px;
+    font-weight: Bold;
+    text-align: center;
+}
+
+/* ::: Detail page Elements ::: */
+
+
+/* ::: Detail page Table Elements */
+table.bordered    { border: solid; border-width: thin; }
+table.bordered td { border: solid; border-width: thin; }
+table.bordered th { border: solid; border-width: thin; border-color: black; }
+/* ::: Detail page Table Elements :::*/
+
+/* ::: Form Elements */
+.choices{
+	display: inline-block;
+}
+
+.content{
+	width: 400px;
+	margin: auto;
+	border-style: solid;
+	border-color:black;
+	padding: 10px;
+}
+
+.btn-group button {
+    background-color: #04AA6D; /* Green background */
+    border: 1px solid green; /* Green border */
+    color: white; /* White text */
+    padding: 10px 24px; /* Some padding */
+    cursor: pointer; /* Pointer/hand icon */
+    width: 50%; /* Set a width if needed */
+    display: block; /* Make the buttons appear below each other */
+  }
+  
+  .btn-group button:not(:last-child) {
+    border-bottom: none; /* Prevent double borders */
+  }
+  
+  /* Add a background color on hover */
+  .btn-group button:hover {
+    background-color: #3e8e41;
+  }
+
+/* ::: Form Elements */
+
+
+/* ::: Form Elements */
+.navButton{
+    position: absolute;
+    top:50%;
+    right: 0;
+    width: 120px;
+    transform: translateY(-50%);
+}
+
+.loginRegister{
+    display: inline-block;
+}
+/* ::: Form Elements */
